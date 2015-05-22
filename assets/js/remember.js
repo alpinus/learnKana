@@ -11,10 +11,14 @@ function init(){
 	
 }
 function next(){
-	if(current_id<total_id){
-		current_id++;
+	if(!is_random){
+		if(current_id<total_id){
+			current_id++;
+		}else{
+			current_id=1;	
+		}
 	}else{
-		current_id=1;	
+		current_id=Math.ceil(Math.random()*total_id);
 	}
 	set_display();
 }
