@@ -87,12 +87,16 @@ function set_kana_size(){
 	var img= $(".katakana-img");
 	var img2=$(".hiragana-img");
 	var roman=$(".Roman-img");
+	var tip=$(".tip");
+	var speak_btn=$(".speak-btn")
 	if(show_Roman){
 		//罗马音显示的话就要给它留30%的高度
 		group.css("height","70%");
+		group.css("width","70%");
 	}else{
 		//罗马音不显示的情况
 		group.css("height","100%");
+		group.css("width","100%");
 	}
 	if(show_hiragana&&show_katakana){
 			img.css("height","30%");
@@ -103,6 +107,23 @@ function set_kana_size(){
 			img2.css("height","70%");
 	}else if(!show_hiragana&&!show_katakana){
 			group.css("height","30%");
+	}
+	if(!show_hiragana&&!show_katakana&&!show_Roman){
+		/*tip.css("display","inline");
+		float: right;
+		margin-right: 5em;*/
+		speak_btn.css("display","inline");
+		speak_btn.css("top","40%");
+		speak_btn.css("right","");
+		speak_btn.css("margin","0px auto");
+		/*speak_btn.css("left","40%");
+		speak_btn.css("right","40%");*/
+	
+	}else{
+		speak_btn.css("right","2%");
+		speak_btn.css("top","20%");
+		speak_btn.css("position","absolute");		
+		speak_btn.css("float","right");
 	}
 }
 function set_Roman(){

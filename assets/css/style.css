@@ -6,6 +6,9 @@
 a{
 	font-size: 4em;
 }
+p{
+	font-size: 3em;
+}
 div{
 	display: block;
 }
@@ -63,6 +66,7 @@ a{
 	float: left;
 	padding-top: 10px;
 	padding-left: 25px;
+	
 }
 .top-bar a{
 	font-size: 3em;
