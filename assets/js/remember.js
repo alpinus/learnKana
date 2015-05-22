@@ -28,7 +28,12 @@ function set_display(){
 	set_katakana();
 	set_Roman();
 }
-
+function speak_function() {
+	/*alert("播放音乐");*/
+	var audio=$("#speak-audio");
+	audio.attr("src","assets/sound/test.mp3");
+	audio.attr("autoplay","true");
+}
 
 function change_option(option_type){
 	switch(option_type){

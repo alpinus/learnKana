@@ -28,6 +28,14 @@
 	position: absolute;
 	bottom: 0em;
 }
+audio{
+	display:none;
+}
+.speak-btn{
+	display: block;
+	float: right;
+	margin-right: 5em;
+}
 .next-btn{
 	font-size: 4em;
 	display: block;
