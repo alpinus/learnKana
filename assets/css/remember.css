@@ -1,20 +1,36 @@
 
-.display img{
-	height: 100%;
+
+.kana{
+	height: auto;
 	margin: 0 auto;
+}
+.Roman-img{
+	height: 20%;
+	/*margin-top: 1em;*/
+}
+.hiragana-img{
+	height: 80%;
+}
+.katakana-img{
+	height: 60%;
 }
 .option{
 	float: left;
 	font-size: 4em;
+	width: 25%;
+	
 }
 .option-bar{
 	display: block;
 	width: 100%;
-	height: 30px;
-	padding-bottom: 0px;
+	height: 15%;
+	background-color:  lightskyblue;
+	position: absolute;
+	bottom: 0em;
 }
 .next-btn{
 	font-size: 4em;
 	display: block;
 	width: 100%;
+	margin-top: 1em;
 }

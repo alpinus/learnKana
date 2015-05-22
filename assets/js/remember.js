@@ -1,42 +1,44 @@
 var total_id=10;
 var current_id=1;
-var show_ping=true;
-var show_pian=true;
-var show_luoma=true;
+var show_hiragana=true;
+var show_katakana=true;
+var show_Roman=true;
 var is_random=false;
 function init(){
-	//alert("init");
-	show_hiragana();
-	set_ping();
-	set_pian();
-	set_luoma();
+	set_display();
+	set_Roman();
 	set_random();
+	
 }
 function next(){
-	if(current_id+1<total_id){
+	if(current_id<total_id){
 		current_id++;
 	}else{
 		current_id=1;	
 	}
-	show_hiragana();
+	set_display();
 }
-function show_hiragana() {
-	var img= $(".hiragana-img");
-	img.attr("src","assets/image/hiragana/"+current_id+".png");
+//分别根据每个选项设置提示的显示
+function set_display(){
+	set_hiragana();
+	set_katakana();
+	set_Roman();
 }
+
+
 function change_option(option_type){
 	switch(option_type){
-		case "ping":
-			show_ping=!show_ping;
-			set_ping();
+		case "hiragana":
+			show_hiragana=!show_hiragana;
+			set_hiragana();
 		break;
-		case "pian":
-			show_pian=!show_pian;
-			set_pian();
+		case "katakana":
+			show_katakana=!show_katakana;
+			set_katakana();
 		break;
-		case "luoma":
-			show_luoma=!show_luoma;
-			set_luoma();
+		case "Roman":
+			show_Roman=!show_Roman;
+			set_Roman();
 		break;
 		case "random":
 			is_random=!is_random;
@@ -44,35 +46,49 @@ function change_option(option_type){
 		break;
 	}
 }
-function set_ping(){
-	var btn=$("#btn-ping");
-	if(show_ping){
+function set_hiragana(){
+	var btn=$("#btn-hiragana");
+	var img= $(".hiragana-img");
+	if(show_hiragana){
 		btn.css("background-color","red");
+		img.attr("src","assets/image/hiragana/"+current_id+".png");
+		img.css("display","inline");
 	}else{
 		btn.css("background-color","gray");
+		img.css("display","none");
 	}
 }
-function  set_pian() {
-	var btn=$("#btn-pian");
-	if(show_pian){
+function  set_katakana() {
+	var btn=$("#btn-katakana");
+	var img= $(".katakana-img");
+	if(show_katakana){
 		btn.css("background-color","yellow");
+		img.attr("src","assets/image/katakana/"+current_id+".png");
+		img.css("display","inline");
 	}else{
 		btn.css("background-color","gray");
+		img.css("display","none");
 	}
 }
-function set_luoma(){
-	var btn=$("#btn-luoma");
-	if(show_luoma){
+function set_Roman(){
+	var btn=$("#btn-Roman");
+	var img= $(".Roman-img");
+	if(show_Roman){
 		btn.css("background-color","blue");
+		img.attr("src","assets/image/Roman/"+current_id+".png");
+		img.css("display","inline");
 	}else{
 		btn.css("background-color","gray");
+		img.css("display","none");
 	}
 }
 function set_random() {
 	var btn=$("#btn-random");
 	if(is_random){
-		btn.css("background-color","green");
-	}else{
+		btn.text("乱序");
 		btn.css("background-color","gray");
+	}else{		
+		btn.text("顺序");
+		btn.css("background-color","green");
 	}
 }

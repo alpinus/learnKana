@@ -14,13 +14,17 @@
 			<div class="top-bar"><p class="title">假名记忆</p><a href="index.html">返回</a></div>
 			<a href="viewAll.html">浏览50音图</a>
 			<div class="display">
-				<img class="hiragana-img"></img>
+				<div class="kana">
+					<img class="hiragana-img"></img>
+					<img class="katakana-img"></img>
+				</div>
+				<img class="Roman-img"></img>
 			</div>
 			<a class="next-btn" href="#" onclick="next();">下一个</a>
 			<div class="option-bar">
-				<a class="option" id="btn-ping" href="#" onclick="change_option('ping');">平假名</a>
-				<a class="option" id="btn-pian" href="#" onclick="change_option('pian');">片假名</a>
-				<a class="option" id="btn-luoma" href="#" onclick="change_option('luoma');">罗马音</a>
+				<a class="option" id="btn-hiragana" href="#" onclick="change_option('hiragana');">平假名</a>
+				<a class="option" id="btn-katakana" href="#" onclick="change_option('katakana');">片假名</a>
+				<a class="option" id="btn-Roman" href="#" onclick="change_option('Roman');">罗马音</a>
 				<a class="option" id="btn-random" href="#" onclick="change_option('random');">乱序</a>
 			</div>
 			
