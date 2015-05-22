@@ -1,6 +1,7 @@
 .display{
 	width: 100%;
 	margin: 0 auto;
+	text-align: center;
 }
 .display img{
 	height: 50%;
@@ -8,6 +9,7 @@
 }
 .option{
 	float: left;
+	font-size: 4em;
 }
 .option-bar{
 	display: block;

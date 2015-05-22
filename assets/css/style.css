@@ -2,6 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 }
+a{
+	font-size: 4em;
+}
 div{
 	display: block;
 }
