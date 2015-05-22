@@ -31,7 +31,7 @@ function set_display(){
 function speak_function() {
 	/*alert("播放音乐");*/
 	var audio=$("#speak-audio");
-	audio.attr("src","assets/sound/test.mp3");
+	audio.attr("src","assets/sound/"+current_id+".mp3");
 	audio.attr("autoplay","true");
 }
 
