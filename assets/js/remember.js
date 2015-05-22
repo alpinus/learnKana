@@ -24,9 +24,11 @@ function next(){
 }
 //分别根据每个选项设置提示的显示
 function set_display(){
+	/*alert(show_hiragana+","+show_katakana);*/
 	set_hiragana();
 	set_katakana();
 	set_Roman();
+	set_kana_size();
 }
 function speak_function() {
 	/*alert("播放音乐");*/
@@ -54,6 +56,7 @@ function change_option(option_type){
 			set_random();
 		break;
 	}
+	set_kana_size();
 }
 function set_hiragana(){
 	var btn=$("#btn-hiragana");
@@ -77,6 +80,29 @@ function  set_katakana() {
 	}else{
 		btn.css("background-color","gray");
 		img.css("display","none");
+	}
+}
+function set_kana_size(){
+	var group=$(".kana");
+	var img= $(".katakana-img");
+	var img2=$(".hiragana-img");
+	var roman=$(".Roman-img");
+	if(show_Roman){
+		//罗马音显示的话就要给它留30%的高度
+		group.css("height","70%");
+	}else{
+		//罗马音不显示的情况
+		group.css("height","100%");
+	}
+	if(show_hiragana&&show_katakana){
+			img.css("height","30%");
+			img2.css("height","70%");
+	}else if(!show_hiragana&&show_katakana){
+			img.css("height","70%");
+	}else if(show_hiragana&&!show_katakana){
+			img2.css("height","70%");
+	}else if(!show_hiragana&&!show_katakana){
+			group.css("height","30%");
 	}
 }
 function set_Roman(){
