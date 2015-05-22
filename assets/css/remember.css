@@ -9,16 +9,18 @@
 	/*margin-top: 1em;*/
 }
 .hiragana-img{
-	height: 80%;
+	/*height: 80%;*/
+	height: auto;
 }
 .katakana-img{
-	height: 60%;
+	/*height: 60%;*/
+	height: auto;
 }
 .option{
 	float: left;
 	font-size: 4em;
 	width: 25%;
-	
+	color: white;
 }
 .option-bar{
 	display: block;

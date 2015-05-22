@@ -71,7 +71,7 @@ function  set_katakana() {
 	var btn=$("#btn-katakana");
 	var img= $(".katakana-img");
 	if(show_katakana){
-		btn.css("background-color","yellow");
+		btn.css("background-color","orange");
 		img.attr("src","assets/image/katakana/"+current_id+".png");
 		img.css("display","inline");
 	}else{
@@ -96,8 +96,8 @@ function set_random() {
 	if(is_random){
 		btn.text("乱序");
 		btn.css("background-color","gray");
-	}else{		
+	}else{
 		btn.text("顺序");
-		btn.css("background-color","green");
+		btn.css("background-color","darksalmon");
 	}
 }

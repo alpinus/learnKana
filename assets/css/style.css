@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 }
+
 a{
 	font-size: 4em;
 }
@@ -12,6 +13,8 @@ body{
 	background-color: #ccc;
 	width: 100%;
 	height: 100%;
+	font-family: "Microsoft YaHei",arial;
+	
 }
 #content{overflow:hidden;
 	/*width: 300px;
@@ -25,28 +28,8 @@ a{
 	 text-decoration: none;
 	 text-align: center;
 }
-.title_txt{
-	color: red;
-	font-size: 5em;
-	width: 100%;
-	height: 100px;
-	display: block;
-	position: relative;
-	 padding-top: 100px;
-	text-align: center;
-	overflow:hidden;
-}
 
-.title_btn{
-	color:  brown;
-	background-color:  antiquewhite;
-	font-size: 4em;
-	width: 100%;
-	display: block;
-	position: relative;
-	margin:50px auto;
-	text-align: center;
-}
+
 
 .top-bar{
 	padding-top: 3px;
@@ -73,4 +56,5 @@ a{
 	height: 50%;
 	margin: 0 auto;
 	text-align: center;
+	overflow: auto;
 }
