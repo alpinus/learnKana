@@ -14,12 +14,16 @@
 		<div id="content">
 			<div class="top-bar"><p class="title">假名记忆</p><a href="index.html">返回</a></div>
 			<a href="viewAll.html">浏览50音图</a>
-			<div class="display">
-				<audio id="speak-audio" src="" controls="false" ></audio>
-				<img class="speak-btn" src="assets/image/speak.gif" onclick="speak_function();"></img>
+			<img class="speak-btn" src="assets/image/speak.gif" onclick="speak_function();"></img>
+			<audio id="speak-audio" src="" controls="false" ></audio>
+			<div class="display">				
 				<div class="kana">
-					<img class="hiragana-img"></img>
-					<img class="katakana-img"></img>
+					<div class="center clearfix">
+						<div class="kana-group">
+							<img class="hiragana-img"></img>
+							<img class="katakana-img"></img>
+						</div>
+					</div>
 				</div>
 				<img class="Roman-img"></img>
 			</div>

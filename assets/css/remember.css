@@ -1,8 +1,16 @@
 
 
 .kana{
-	height: auto;
+	height: 80%;
+	width: 80%;
 	margin: 0 auto;
+	
+}
+.kana-group{
+	width: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	
 }
 .Roman-img{
 	height: 20%;
@@ -11,10 +19,12 @@
 .hiragana-img{
 	/*height: 80%;*/
 	height: auto;
+	margin-bottom: 0px;
 }
 .katakana-img{
 	/*height: 60%;*/
 	height: auto;
+	margin-bottom: 0px;
 }
 .option{
 	float: left;
@@ -37,6 +47,7 @@ audio{
 	display: block;
 	float: right;
 	margin-right: 5em;
+	position:  absolute;
 }
 .next-btn{
 	font-size: 4em;
