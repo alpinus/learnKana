@@ -6,9 +6,6 @@ var show_Roman=true;
 var is_random=false;
 function init(){
 	set_display();
-	set_Roman();
-	set_random();
-	
 }
 function next(){
 	if(!is_random){
