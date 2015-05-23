@@ -1,4 +1,4 @@
-var total_id=10;
+var total_id=45;
 var current_id=1;
 var show_hiragana=true;
 var show_katakana=true;
@@ -63,7 +63,7 @@ function set_hiragana(){
 	var img= $(".hiragana-img");
 	if(show_hiragana){
 		btn.css("background-color","red");
-		img.attr("src","assets/image/hiragana/"+current_id+".png");
+		img.attr("src","assets/image/hiragana/"+current_id+".jpg");
 		img.css("display","inline");
 	}else{
 		btn.css("background-color","gray");
@@ -75,7 +75,19 @@ function  set_katakana() {
 	var img= $(".katakana-img");
 	if(show_katakana){
 		btn.css("background-color","orange");
-		img.attr("src","assets/image/katakana/"+current_id+".png");
+		img.attr("src","assets/image/katakana/"+current_id+".jpg");
+		img.css("display","inline");
+	}else{
+		btn.css("background-color","gray");
+		img.css("display","none");
+	}
+}
+function set_Roman(){
+	var btn=$("#btn-Roman");
+	var img= $(".Roman-img");
+	if(show_Roman){
+		btn.css("background-color","blue");
+		img.attr("src","assets/image/Roman/"+current_id+".jpg");
 		img.css("display","inline");
 	}else{
 		btn.css("background-color","gray");
@@ -126,18 +138,7 @@ function set_kana_size(){
 		speak_btn.css("float","right");
 	}
 }
-function set_Roman(){
-	var btn=$("#btn-Roman");
-	var img= $(".Roman-img");
-	if(show_Roman){
-		btn.css("background-color","blue");
-		img.attr("src","assets/image/Roman/"+current_id+".png");
-		img.css("display","inline");
-	}else{
-		btn.css("background-color","gray");
-		img.css("display","none");
-	}
-}
+
 function set_random() {
 	var btn=$("#btn-random");
 	if(is_random){
