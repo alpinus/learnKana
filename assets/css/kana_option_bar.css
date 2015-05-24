@@ -1,0 +1,15 @@
+.option{
+	
+	float: left;
+	font-size: 4em;
+	color: white;
+	display: block;
+	overflow: auto;
+}
+.option-bar{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color:  lightskyblue;
+	
+}

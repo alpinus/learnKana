@@ -1,0 +1,40 @@
+.kana{
+	/*height: 70%;*/
+	width: 80%;
+	margin: 0 auto;
+	
+}
+.kana-group{
+	width: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+.Roman-img{
+	height: 20%;
+	margin-top: 0px;
+}
+.hiragana-img{
+	/*height: 80%;*/
+	height: auto;
+	margin-bottom: 0px;
+}
+.katakana-img{
+	/*height: 60%;*/
+	height: auto;
+	margin-bottom: 0px;
+}
+audio{
+	display:none;
+}
+.speak-btn{
+	display: block;
+	position:  absolute;
+}
+.tip{
+	position:  absolute;
+	top: 40%;
+	left: 2%;
+	right: 2%;
+	display: none;
+}

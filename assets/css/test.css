@@ -1,0 +1,22 @@
+
+.option{
+	width: 30%;
+}
+.answer-btn{
+	display: block;	
+	text-align: center;
+}
+.answer-bar{
+	display: block;	
+}
+.answer-option{
+	float: left;
+	display: block;
+}
+.ask-box{
+	top: 0px;
+	
+}
+.answer-box{
+	top: 0px;
+}

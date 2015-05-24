@@ -4,10 +4,11 @@
 		<title>假名测试</title>
 		<meta charset="utf-8"></meta>
 		<link type="text/css" rel="stylesheet" href="assets/css/style.css" ></link>
-		<link type="text/css" rel="stylesheet" href="assets/css/remember.css"></link>
+		<link type="text/css" rel="stylesheet" href="assets/css/test.css" ></link>
+		<link type="text/css" rel="stylesheet" href="assets/css/kana_option_bar.css"></link>
 		<script src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
 		<script src="assets/js/script.js"></script>
-		<script src="assets/js/remember.js"></script>
+		<script src="assets/js/kana.js"></script>
 		<script src="assets/js/test.js"></script>
 	</head>
 	<body onload="init();">
@@ -19,8 +20,9 @@
 				<a class="option" id="btn-katakana" href="#" onclick="change_option('katakana');">片假名</a>
 				<a class="option" id="btn-Roman" href="#" onclick="change_option('Roman');">罗马音</a>
 			</div>
+			<div style="clear:both"></div>
 				<div class="display">
-					<div class="ask-box">
+					<div class="ask-box box">
 						<img class="speak-btn" src="assets/image/speak.gif" onclick="speak_function();"></img>
 						<p class="tip">这是一段提示文字 正常情况看不到</p>				
 						<div class="kana">
@@ -33,12 +35,17 @@
 						</div>
 						<img class="Roman-img"></img>
 					</div>
-					<div class="answer-box">
+					<div class="answer-box box">
 						<p>回答的框框</p>
 					</div>
-					<div>回答</div>
+					<div style="clear:both"></div>
+					
 				</div>
-			<div>回答：</div><a class="answer-option">平假名</a><a class="answer-option">片假名</a><a class="answer-option">罗马音</a>
+			<div style="clear:both"></div>
+				<div class="answer-btn"><a href="#" onclick="answer();">回答</a></div>
+				<div class="answer-bar">
+					<div>回答：</div><a class="answer-option">平假名</a><a class="answer-option">片假名</a><a class="answer-option">罗马音</a>
+				</div>
 		</div>
 	</body>
 	

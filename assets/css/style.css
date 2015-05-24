@@ -80,5 +80,12 @@ a{
 	height: 50%;
 	margin: 0 auto;
 	text-align: center;
-	overflow: auto;
+	/*overflow: auto;*/
+	overflow:  visible;
+	
+}
+.box{
+	width: 100%;
+	height: 100%;
+	background-color:  burlywood;
 }
